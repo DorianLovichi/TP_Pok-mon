@@ -1,6 +1,7 @@
 package pokemon;
 
-import java.io.BufferedReader;  
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;  
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,10 +19,13 @@ public abstract class Pokedex{
 		
 		//définit le séparateur
 		String splitBy = ";";
-		
+		  String workingDirectory = System.getProperty("user.dir");
+
+        // Construisez le chemin du fichier en utilisant File.separator pour la portabilité
+        String filePath = workingDirectory + File.separator + "pokemon" + File.separator + "src" + File.separator + "pokemon" + File.separator + "bdd.csv";
 		try   {  
 			//permet de récupérer le fichier csv 
-			BufferedReader br = new BufferedReader(new FileReader("pokemon/src/pokemon/bdd.csv")); 
+			BufferedReader br = new BufferedReader(new FileReader(filePath)); 
 			
 			//pour chaque ligne
 			while ((line = br.readLine()) != null){
