@@ -22,7 +22,7 @@ public abstract class Pokedex{
 		  String workingDirectory = System.getProperty("user.dir");
 
         // Construisez le chemin du fichier en utilisant File.separator pour la portabilité
-        String filePath = workingDirectory + File.separator + "pokemon" + File.separator + "src" + File.separator + "pokemon" + File.separator + "bdd.csv";
+        String filePath = workingDirectory +File.separator+ "TP_Pok-mon-main" +File.separator+ "TpPokemon"+ File.separator+ "pokemon" + File.separator + "src" + File.separator + "pokemon" + File.separator + "bdd.csv";
 		try   {  
 			//permet de récupérer le fichier csv 
 			BufferedReader br = new BufferedReader(new FileReader(filePath)); 
