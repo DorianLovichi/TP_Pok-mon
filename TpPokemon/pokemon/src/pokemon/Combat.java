@@ -27,7 +27,7 @@ public abstract class Combat {
 		
 		try   {  
 			//permet de récupérer le fichier csv 
-			BufferedReader br = new BufferedReader(new FileReader("pokemon/src/pokemon/TableauType.csv")); 
+			BufferedReader br = new BufferedReader(new FileReader("TP_Pok-mon-main/TpPokemon/pokemon/src/pokemon/TableauType.csv")); 
 			
 			
 			//permet de garder la liste des types présents

@@ -142,7 +142,7 @@ public class Joueur implements Serializable {
 	
 	public void serialiser() throws IOException {
 		// On crée un flux de sortie vers un fichier
-		FileOutputStream fichier = new FileOutputStream("pokemon/src/pokemon/"+this.nom+".txt");
+		FileOutputStream fichier = new FileOutputStream("TP_Pok-mon-main/TpPokemon/pokemon/src/pokemon/"+this.nom+".txt");
 		// On crée un flux de sortie d'objet
 		ObjectOutputStream flux = new ObjectOutputStream(fichier);
 		// On écrit l'objet
@@ -153,7 +153,7 @@ public class Joueur implements Serializable {
 	
 	public static Joueur deserialiser(String nom) throws IOException, ClassNotFoundException {
 		// On crée un flux d'entrée vers un fichier
-		FileInputStream fichier = new FileInputStream("pokemon/src/pokemon/"+nom+".txt");
+		FileInputStream fichier = new FileInputStream("TP_Pok-mon-main/TpPokemon/pokemon/src/pokemon/"+nom+".txt");
 		// On crée un flux d'entrée d'objet
 		ObjectInputStream flux = new ObjectInputStream(fichier);
 		// On récupère l'objet 
