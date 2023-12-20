@@ -15,7 +15,7 @@ L'application permet aux joueurs de capturer, entraîner et combattre des Pokém
 ## Utilisation
 
 1. Exécutez le fichier `Server.java` dans un premier temps.
-2. Executez le fichier client et quand vous êtes prêt, choisissez l'option combattre.
-3. Executez un deuxième client et reproduire le procédé.
+2. Executez le fichier `client.java` et quand vous êtes prêt, choisissez l'option combattre.
+3. Executez un deuxième `client.java` et reproduire le procédé.
 
 
